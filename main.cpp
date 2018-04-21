@@ -32,7 +32,7 @@ public:
      * Square accessor method used to access the length of the side of this Square.
      * @return The length of the side of this Square is returned.
      */
-    int getSide();
+    int getSide() const;
 };
 
 Square::Square(int s) {
@@ -43,7 +43,7 @@ void Square::setSide(int s) {
     side = s;
 }
 
-int Square::getSide() {
+int Square::getSide() const {
     return side;
 }
 
