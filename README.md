@@ -6,5 +6,5 @@ This repo demonstrates the evolution of a simple class in C++. We begin by defin
 
 |Commit Hash|Comment|
 |-----------|-------|
-|           | Initial commit; `Square` class is not defined yet.
+|3649510    | Initial commit; `Square` class is not defined yet.
 
