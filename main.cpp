@@ -7,23 +7,50 @@
 #include <cstdlib>
 #include <iostream>
 
+/**
+ * A simple abstraction of a Square.
+ */
 class Square {
 private:
     int side;
 public:
-    explicit Square(int s = 1) {
-        side = s;
-    }
+    /**
+     * Square constructor.
+     * Notice the use of the keyword explicit and the default initialization
+     * only appear here, in the declaration and not in its implementation.
+     * @param s the length of the side of this Square
+     */
+    explicit Square(int s = 1);
 
-    void setSide(int s) {
-        side = s;
-    }
+    /**
+     * Square mutator method to change the length of the side of this Square.
+     * @param s the new length of the side of this Square
+     */
+    void setSide(int s);
 
-    int getSide() {
-        return side;
-    }
+    /**
+     * Square accessor method used to access the length of the side of this Square.
+     * @return The length of the side of this Square is returned.
+     */
+    int getSide();
 };
 
+Square::Square(int s) {
+    side = s;
+}
+
+void Square::setSide(int s) {
+    side = s;
+}
+
+int Square::getSide() {
+    return side;
+}
+
+/**
+ * Entry-point of this application.
+ * @return EXIT_SUCCESS is returned upon successful execution of this program.
+ */
 int main() {
     std::cout << "An introduction to classes in C++!" << std::endl;
     Square defaultSquare{};
