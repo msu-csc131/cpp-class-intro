@@ -11,7 +11,7 @@ class Square {
 private:
     int side;
 public:
-    Square(int s = 1) {
+    explicit Square(int s = 1) {
         side = s;
     }
 
